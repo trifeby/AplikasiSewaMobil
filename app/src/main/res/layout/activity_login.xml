@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f3f3"
+    style="@style/DefaultLayout"
+    tools:context=".LoginActivity">
+
+    <TextView style="@style/LabelHeader"
+        android:text="Login"
+        android:fontFamily="casual"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <EditText style="@style/EditText"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:id="@+id/txt_email"
+            android:fontFamily="casual"/>
+
+        <EditText style="@style/EditText"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/txt_password"
+            android:fontFamily="casual"/>
+
+        <Button style="@style/Button"
+            android:text="Login"
+            android:id="@+id/btn_login"
+            android:fontFamily="casual"
+            android:background="#5b4b4b"
+            android:onClick="login">
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+        <TextView
+            style="@style/LinkText"
+            android:text="Register"
+            android:gravity="left"
+            android:onClick="a_register"/>
+
+        <TextView
+            style="@style/LinkText"
+            android:text="Forgot Password"
+            android:gravity="right"
+            android:onClick="a_forgotpassword"/>
+    </LinearLayout>
+</LinearLayout>

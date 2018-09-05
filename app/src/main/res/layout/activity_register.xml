@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/DefaultLayout"
+    android:background="#dcdede"
+    tools:context=".RegisterActivity">
+
+    <TextView style="@style/LabelHeader"
+        android:text="SIGN UP"
+        android:fontFamily="casual"/>
+
+    <EditText style="@style/EditText"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:fontFamily="casual"
+        android:id="@+id/txt_email"/>
+
+    <EditText style="@style/EditText"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:fontFamily="casual"
+        android:id="@+id/txt_password"/>
+
+    <EditText style="@style/EditText"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:fontFamily="casual"
+        android:id="@+id/txt_confirm_password"/>
+
+    <EditText style="@style/EditText"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:fontFamily="casual"
+        android:id="@+id/txt_fullname"/>
+
+    <EditText style="@style/EditText"
+        android:hint="Birth Date"
+        android:inputType="text|date"
+        android:fontFamily="casual"
+        android:id="@+id/txt_birthdate"/>
+
+    <EditText style="@style/EditText"
+        android:hint="Telepon"
+        android:inputType="textPhonetic"
+        android:fontFamily="casual"
+        android:id="@+id/txt_telepon"/>
+
+    <Button style="@style/Button"
+        android:text="submit"
+        android:background="#d42439"
+        android:fontFamily="casual"
+        android:id="@+id/btn_daftar"
+        android:onClick="register">
+    </Button>
+
+</LinearLayout>
